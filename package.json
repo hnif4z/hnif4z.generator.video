@@ -1,0 +1,10 @@
+{
+  "name": "product-video-by-hanief4z-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "latest",
+    "formidable": "latest"
+  }
+}
