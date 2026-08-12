@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PRODUCT VIDEO BY HANIEF4Z</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><strong>PRODUCT VIDEO BY HANIEF4Z</strong></header>
+  <main>
+    <section class="preview">
+      <div class="video-box">
+        <video id="video" controls playsinline></video>
+        <div id="empty">Video Anda akan muncul di sini</div>
+      </div>
+    </section>
+    <section class="panel">
+      <label>PRODUCT</label>
+      <input id="image" type="file" accept=".jpg,.jpeg,.png,.webp">
+      <img id="thumb" alt="" hidden>
+      <button id="replace" hidden>Ganti gambar</button>
+
+      <label>DESKRIPSI PRODUK</label>
+      <textarea id="description" placeholder="Contoh: Mini rice cooker 1L, praktis untuk memasak nasi dan menghangatkan makanan."></textarea>
+      <button id="analyze">✨ Analisis Produk</button>
+
+      <label>AUDIO & VOICE OVER</label>
+      <div class="row">
+        <button data-toggle="audio">Audio: ON</button>
+        <button data-toggle="voice">Voice Over: ON</button>
+      </div>
+
+      <div id="voiceOptions">
+        <label>VOICE OVER</label>
+        <select id="voice"><option>Female</option><option>Male</option></select>
+        <select id="tone"><option>Natural</option><option>Friendly</option><option>Energetic</option><option>Professional</option></select>
+        <select id="language"><option>Bahasa Indonesia</option><option>English</option></select>
+      </div>
+
+      <label>SCRIPT VO</label>
+      <textarea id="script" placeholder="Masukkan script atau buat otomatis."></textarea>
+      <button id="makeScript">✨ Buat Script Otomatis</button>
+
+      <label>DURASI</label>
+      <select id="duration"><option value="10">10 detik</option><option value="15">15 detik</option><option value="30">30 detik</option></select>
+
+      <button class="primary" id="generate">⚡ BUAT VIDEO ADS</button>
+      <button id="again" hidden>BUAT VIDEO LAGI</button>
+      <a id="download" class="download" hidden>↓ SIMPAN KE PERANGKAT</a>
+      <p id="status"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
